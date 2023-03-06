@@ -3,7 +3,8 @@
 /* Constants */
 #define TERMINAL "st"
 #define TERMCLASS "St"
-#define BROWSER "librewolf"
+/* #define BROWSER "librewolf" */
+#define BROWSER "vivaldi"
 
 /* appearance */
 static unsigned int borderpx  = 3;        /* border pixel of windows */
@@ -334,4 +335,3 @@ static const Button buttons[] = {
 	{ ClkTagBar,		0,		Button5,	shiftview,	{.i = 1} },
 	{ ClkRootWin,		0,		Button2,	togglebar,	{0} },
 };
-
