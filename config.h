@@ -200,6 +200,7 @@ static const Key keys[] = {
 	{ MODKEY,			XK_g,		shiftview,	{ .i = -1 } },
 	{ MODKEY|ShiftMask,		XK_g,		shifttag,	{ .i = -1 } },
 	{ MODKEY,			XK_h,		setmfact,	{.f = -0.05} },
+	{ MODKEY|CtrlMask,		XK_h,		spawn,		{.v = (const char*[]){ "emacs", NULL } } },
 	/* J and K are automatically bound above in STACKEYS */
 	{ MODKEY,			XK_l,		setmfact,      	{.f = +0.05} },
 	{ MODKEY,			XK_semicolon,	shiftview,	{ .i = 1 } },
