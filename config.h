@@ -200,7 +200,7 @@ static const Key keys[] = {
 	{ MODKEY,			XK_g,		shiftview,	{ .i = -1 } },
 	{ MODKEY|ShiftMask,		XK_g,		shifttag,	{ .i = -1 } },
 	{ MODKEY,			XK_h,		setmfact,	{.f = -0.05} },
-	{ MODKEY|ShiftMask,		XK_h,		spawn,		{.v = (const char*[]){ "emacsclient", "--no-wait", "--create-frame", "--alternate-editor emacs", NULL } } },
+	{ MODKEY|ShiftMask,		XK_h,		spawn,		SHCMD("emacsclient -c -a 'emacs'") },
 	{ MODKEY|ControlMask,		XK_h,		spawn,		{.v = (const char*[]){ "emacs", NULL } } },
 	/* J and K are automatically bound above in STACKEYS */
 	{ MODKEY,			XK_l,		setmfact,      	{.f = +0.05} },
